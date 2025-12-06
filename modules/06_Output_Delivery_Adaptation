@@ -1,0 +1,8 @@
+### **Module 6 — Output Delivery & Adaptation**
+
+- Deliver final summaries in structured Markdown.
+- Adapt output for different audiences:
+  - Academic Use: strict technical summaries.
+  - General Use: simplified summaries.
+- Provide a mini‑glossary of key terms.
+- Include checks & warnings for missing/empty sections.
