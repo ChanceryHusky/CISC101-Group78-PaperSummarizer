@@ -1,0 +1,6 @@
+### **Module 5 — Quality Assurance & Compliance**
+
+- Validate word count (≥50 and ≤100 words per section).
+- Check formatting consistency (Markdown table, headings).
+- Ensure terminology consistency (self‑Attention, multihead).\
+- Confirm adherence to constraints (no outside sources, no hallucinations).
