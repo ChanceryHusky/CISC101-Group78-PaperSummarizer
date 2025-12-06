@@ -4,10 +4,10 @@
 Ensure summarization is safe, accurate, and strictly grounded in the source paper.
 
 ## Existing Guardrails
-- **Handle missing or empty sections**: skip gracefully.
-- **Detect and correct <50‑word summaries**: enforce minimum length.
-- **Mitigate hallucinations**: enforce “paper‑only” rule.
-- **Apply long‑paper chunking strategies**: use PS2 context‑window methods to manage large text spans.
+- Handle missing or empty sections**: skip gracefully.
+- Detect and correct <50‑word summaries**: enforce minimum length.
+- Mitigate hallucinations**: enforce “paper‑only” rule.
+- Apply long‑paper chunking strategies**: use PS2 context‑window methods to manage large text spans.
 
 ---
 
@@ -17,7 +17,7 @@ Ensure summarization is safe, accurate, and strictly grounded in the source pape
 Introduce a mode or flag:  
 - `evidence_mode = "strict"`
 
-**Behaviour when set to "strict":**
+Behaviour when set to "strict":
 - Only include claims, equations, and results that appear in the provided text.
 - No external information, assumptions, or inferred content.
 - If insufficient information is found, output explicitly:  
