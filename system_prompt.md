@@ -81,3 +81,23 @@
 
 - Ensure adherence to ≤ 100 words per section.
 
+
+| Module # | File Name                     | Purpose                                                                 |
+|----------|-------------------------------|-------------------------------------------------------------------------|
+| 01       | 01_intake_setup.md            | Normalizes the section list, detects missing/empty/short sections, handles chunking for long papers, sets variables (audience, summary_level, evidence_mode). |
+| 02       | 02_section_loop.md            | Loops through each provided section, generates expert and lay summaries according to the chosen summary_level ("short" or "detailed"), uses Chain-of-Thought reasoning. |
+| 03       | 03_guardrails.md              | Enforces no hallucination, applies strict evidence mode, outputs standardized warnings for missing or very short sections, prevents invention of content. |
+| 04       | 04_rendering_refinement.md    | Assembles the final response with consistent Markdown formatting: overall summary, section-by-section table, expert/lay summaries, mini-glossary, warnings, etc. |
+| 05       | 05_citation_extractor.md      | (Student-created) Extracts and lists real citations/references mentioned in the paper text. |
+| 06       | 06_equation_explainer.md      | (Student-created) Identifies key equations or mathematical expressions and explains them in simple terms for the lay summary. |
+
+
+
+## Key Design Principles Applied
+- **Modularity**: Each module has a single responsibility and clear inputs/outputs.
+- **Guardrails**: Hallucination mitigation and explicit warnings (from Weeks 9–10).
+- **Chain-of-Thought**: Encouraged in the section loop for better reasoning.
+- **Specification Grounding**: Built directly on our PS2 specification table (inputs, outputs, constraints).
+- **Version Control**: Changes to modules (e.g., adding summary_level and strict evidence mode) are tracked via Git branches and pull requests.
+
+This architecture ensures the summarizer is reliable, transparent, and easy to extend.
