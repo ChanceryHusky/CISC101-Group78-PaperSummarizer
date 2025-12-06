@@ -17,11 +17,10 @@ Ensure summarization is safe, accurate, and strictly grounded in the source pape
 Introduce a mode or flag:  
 - `evidence_mode = "strict"`
 
-**Behavior when set to "strict":**
+**Behaviour when set to "strict":**
 - Only include claims, equations, and results that appear in the provided text.
 - No external information, assumptions, or inferred content.
 - If insufficient information is found, output explicitly:  
-
 
 
 ### Section Warning Messages
@@ -30,9 +29,7 @@ For sections that are missing, empty, or too short (< 50 words), output standard
 - If missing/empty:  
 
 
-- If too short (< 50 words):  
-
-
+- If too short (< 50 words):
 
 ---
 
@@ -58,5 +55,4 @@ For each section/subsection:
 ### Output (evidence_mode = "strict")
 
 
-### Output (empty section)
 
